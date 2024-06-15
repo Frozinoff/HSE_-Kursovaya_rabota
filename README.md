@@ -19,10 +19,8 @@
 
    git clone https://github.com/Frozinoff/HSE_-Kursovaya_rabota
    
-   cd airport-operations-management
-   
 
-2. **открытие проекта в Visual Studio**
+3. **открытие проекта в Visual Studio**
 
 
 Откройте Visual Studio.
@@ -35,7 +33,7 @@
 3. **Настройка базы данных**
    
 
-Настройте подключение к вашей базе данных в файле конфигурации (например, app.config или web.config).
+Настройте подключение к вашей базе данных в файле конфигурации.
 
 Убедитесь, что база данных настроена и доступна.
 
@@ -51,6 +49,6 @@
 
 Visual Studio 2017 или новее.
 
-.NET Framework (укажите версию, например, 4.7.2).
+.NET Framework 4.7.2.
 
-SQL Server или другая база данных (укажите используемую).
+microsoft sql server.
