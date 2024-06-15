@@ -15,7 +15,7 @@
 ## Установка и запуск
 
 1. **Клонирование репозитория**
-   git clone https://github.com/ваш-репозиторий/airport-operations-management.git
+   git clone https://github.com/Frozinoff/HSE_-Kursovaya_rabota
    cd airport-operations-management
 
 2. **ткрытие проекта в Visual Studio**
