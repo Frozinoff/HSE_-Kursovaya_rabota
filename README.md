@@ -16,9 +16,10 @@
 
 1. **Клонирование репозитория**
    git clone https://github.com/Frozinoff/HSE_-Kursovaya_rabota
+   
    cd airport-operations-management
 
-2. **ткрытие проекта в Visual Studio**
+3. **ткрытие проекта в Visual Studio**
 
 Откройте Visual Studio.
 Выберите "Открыть проект/решение".
