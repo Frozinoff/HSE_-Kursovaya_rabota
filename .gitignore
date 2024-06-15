@@ -1,0 +1,64 @@
+# Build Folders (you can keep bin if you'd like to check binaries into source control)
+bin/
+obj/
+
+# VS Code directories
+.vscode/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS 2019 auto generated files
+.vs/
+
+# Backup & report files
+*.bak
+*.html
+*.css
+*.log
+*.sql
+*.sqlite
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Exclude EXE files
+*.exe
+
+# Exclude debug logs
+*.tlog
+
+# Visual Studio 2017 config
+.vs/
+
+# Rider config
+.idea/
+
+# Rider project files
+*.ipr
+*.iws
+*.iml
+out/

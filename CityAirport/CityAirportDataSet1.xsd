@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CityAirportDataSet1" targetNamespace="http://tempuri.org/CityAirportDataSet1.xsd" xmlns:mstns="http://tempuri.org/CityAirportDataSet1.xsd" xmlns="http://tempuri.org/CityAirportDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CityAirportConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CityAirportConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CityAirport.Properties.Settings.GlobalReference.Default.CityAirportConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FlightEditTableAdapter" GeneratorDataComponentClassName="FlightEditTableAdapter" Name="FlightEdit" UserDataComponentName="FlightEditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CityAirportConnectionString (Settings)" DbObjectName="CityAirport.dbo.FlightEdit" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT flight_id, flight_date, flight_duration, flight_origin, flight_destination, flight_price, airplane_id, airplane_name FROM dbo.FlightEdit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="flight_id" DataSetColumn="flight_id" />
+              <Mapping SourceColumn="flight_date" DataSetColumn="flight_date" />
+              <Mapping SourceColumn="flight_duration" DataSetColumn="flight_duration" />
+              <Mapping SourceColumn="flight_origin" DataSetColumn="flight_origin" />
+              <Mapping SourceColumn="flight_destination" DataSetColumn="flight_destination" />
+              <Mapping SourceColumn="flight_price" DataSetColumn="flight_price" />
+              <Mapping SourceColumn="airplane_id" DataSetColumn="airplane_id" />
+              <Mapping SourceColumn="airplane_name" DataSetColumn="airplane_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CityAirportDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CityAirportDataSet1" msprop:Generator_UserDSName="CityAirportDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FlightEdit" msprop:Generator_TableClassName="FlightEditDataTable" msprop:Generator_TableVarName="tableFlightEdit" msprop:Generator_TablePropName="FlightEdit" msprop:Generator_RowDeletingName="FlightEditRowDeleting" msprop:Generator_RowChangingName="FlightEditRowChanging" msprop:Generator_RowEvHandlerName="FlightEditRowChangeEventHandler" msprop:Generator_RowDeletedName="FlightEditRowDeleted" msprop:Generator_UserTableName="FlightEdit" msprop:Generator_RowChangedName="FlightEditRowChanged" msprop:Generator_RowEvArgName="FlightEditRowChangeEvent" msprop:Generator_RowClassName="FlightEditRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="flight_id" msprop:Generator_ColumnVarNameInTable="columnflight_id" msprop:Generator_ColumnPropNameInRow="flight_id" msprop:Generator_ColumnPropNameInTable="flight_idColumn" msprop:Generator_UserColumnName="flight_id" type="xs:int" />
+              <xs:element name="flight_date" msprop:Generator_ColumnVarNameInTable="columnflight_date" msprop:Generator_ColumnPropNameInRow="flight_date" msprop:Generator_ColumnPropNameInTable="flight_dateColumn" msprop:Generator_UserColumnName="flight_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="flight_duration" msprop:Generator_ColumnVarNameInTable="columnflight_duration" msprop:Generator_ColumnPropNameInRow="flight_duration" msprop:Generator_ColumnPropNameInTable="flight_durationColumn" msprop:Generator_UserColumnName="flight_duration" type="xs:duration" minOccurs="0" />
+              <xs:element name="flight_origin" msprop:Generator_ColumnVarNameInTable="columnflight_origin" msprop:Generator_ColumnPropNameInRow="flight_origin" msprop:Generator_ColumnPropNameInTable="flight_originColumn" msprop:Generator_UserColumnName="flight_origin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="flight_destination" msprop:Generator_ColumnVarNameInTable="columnflight_destination" msprop:Generator_ColumnPropNameInRow="flight_destination" msprop:Generator_ColumnPropNameInTable="flight_destinationColumn" msprop:Generator_UserColumnName="flight_destination" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="flight_price" msprop:Generator_ColumnVarNameInTable="columnflight_price" msprop:Generator_ColumnPropNameInRow="flight_price" msprop:Generator_ColumnPropNameInTable="flight_priceColumn" msprop:Generator_UserColumnName="flight_price" type="xs:double" minOccurs="0" />
+              <xs:element name="airplane_id" msprop:Generator_ColumnVarNameInTable="columnairplane_id" msprop:Generator_ColumnPropNameInRow="airplane_id" msprop:Generator_ColumnPropNameInTable="airplane_idColumn" msprop:Generator_UserColumnName="airplane_id" type="xs:int" minOccurs="0" />
+              <xs:element name="airplane_name" msprop:Generator_ColumnVarNameInTable="columnairplane_name" msprop:Generator_ColumnPropNameInRow="airplane_name" msprop:Generator_ColumnPropNameInTable="airplane_nameColumn" msprop:Generator_UserColumnName="airplane_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FlightEdit" />
+      <xs:field xpath="mstns:flight_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
